@@ -7,7 +7,7 @@ import './App.css';
 function App() {
 
   let countState = useState(1) //count and setCount and countState has first index [] and second function ()   is a setCount
- const isBackgroundaqua = true;
+
   return (
     <CounterContext.Provider value = {countState}>
     <div >
