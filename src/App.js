@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Parent from './Parent';
+import Child from './Child';
+import CounterContext from './CounterContext'
 import './App.css';
 
 function App() {
+
+  let countState = useState(1) //count and setCount and countState has first index [] and second function ()   is a setCount
+ const isBackgroundaqua = true;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <CounterContext.Provider value = {countState}>
+    <div >
+      <Parent />
+    
+      </div>
+      </CounterContext.Provider>
+  )
 }
 
 export default App;
