@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import CounterReducer from './CounterReducer';
-import Child from './Child';
+
 const Child2 = ()=> {
     let [state,dispatch] = useReducer(CounterReducer, 1);
     console.log(state)

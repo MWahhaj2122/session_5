@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Parent from './Parent';
-import Child from './Child';
 import CounterContext from './CounterContext'
 import './App.css';
 
